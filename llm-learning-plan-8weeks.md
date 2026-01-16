@@ -63,6 +63,17 @@
   - [ ] 支持上传文档、提问、获取答案
   - [ ] 这个项目可以写进简历！
 
+- [ ] 3.4 个性化 RAG 与记忆系统（进阶）
+  - [ ] 理解 LLM 无状态性的局限
+  - [ ] 学习 LangChain Memory 类型（ConversationBufferMemory, ConversationSummaryMemory, VectorStoreRetrieverMemory）
+  - [ ] 实现用户专属记忆向量库
+    - [ ] 对话信息提取与存储
+    - [ ] 用户偏好自动学习
+    - [ ] 记忆检索与融合
+  - [ ] 了解 MemGPT / Zep 等记忆管理方案
+  - [ ] 练习：为 RAG 系统添加"会记住用户"的能力
+  - [ ] 思考：记忆冲突、遗忘机制、隐私问题
+
 ---
 
 ## 第4周：Agent 开发

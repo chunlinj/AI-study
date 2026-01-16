@@ -7,40 +7,40 @@
 
 ## 第1周：Python 基础 + AI 开发环境
 
-- [x] 1.1 Python 快速入门（你有 Java 基础，3天够了）✅
-  - [x] 语法差异：缩进、动态类型、列表推导式
-  - [x] 常用库：requests, json, os
-  - [x] 练习：写一个调用 API 的小脚本
+- [ ] 1.1 Python 快速入门（你有 Java 基础，3天够了）
+  - [ ] 语法差异：缩进、动态类型、列表推导式
+  - [ ] 常用库：requests, json, os
+  - [ ] 练习：写一个调用 API 的小脚本
 
-- [x] 1.2 开发环境搭建 ✅
-  - [x] 安装 Anaconda / venv 虚拟环境
-  - [x] VS Code + Python 插件配置
-  - [x] 熟悉 Jupyter Notebook
+- [ ] 1.2 开发环境搭建
+  - [ ] 安装 Anaconda / venv 虚拟环境
+  - [ ] VS Code + Python 插件配置
+  - [ ] 熟悉 Jupyter Notebook
 
-- [x] 1.3 第一个 LLM 调用 ✅
-  - [x] 注册 DeepSeek / 智谱 API（国内免费额度）
-  - [x] 用 Python 调用大模型 API
-  - [x] 理解 prompt、temperature、max_tokens 等参数
+- [ ] 1.3 第一个 LLM 调用
+  - [ ] 注册 DeepSeek / 智谱 API（国内免费额度）
+  - [ ] 用 Python 调用大模型 API
+  - [ ] 理解 prompt、temperature、max_tokens 等参数
 
 ---
 
 ## 第2周：LangChain 入门 + Prompt Engineering
 
-- [x] 2.1 LangChain 基础 ✅
-  - [x] 安装 langchain, langchain-community
-  - [x] 理解 Chain 的概念
-  - [x] 实现简单的 LLMChain
+- [ ] 2.1 LangChain 基础
+  - [ ] 安装 langchain, langchain-community
+  - [ ] 理解 Chain 的概念
+  - [ ] 实现简单的 LLMChain
 
-- [x] 2.2 Prompt Engineering ✅
-  - [x] 学习 prompt 模板设计
-  - [x] Few-shot learning 实践
-  - [x] Chain-of-Thought 提示技巧
-  - [x] 练习：优化一个问答 prompt
+- [ ] 2.2 Prompt Engineering
+  - [ ] 学习 prompt 模板设计
+  - [ ] Few-shot learning 实践
+  - [ ] Chain-of-Thought 提示技巧
+  - [ ] 练习：优化一个问答 prompt
 
-- [x] 2.3 输出解析 ✅
-  - [x] 使用 OutputParser 结构化输出
-  - [x] JSON 格式输出
-  - [x] 练习：让 LLM 输出结构化数据
+- [ ] 2.3 输出解析
+  - [ ] 使用 OutputParser 结构化输出
+  - [ ] JSON 格式输出
+  - [ ] 练习：让 LLM 输出结构化数据
 
 ---
 
@@ -185,8 +185,8 @@
 
 | 周次 | 重点内容 | 开始日期 | 完成日期 | 状态 |
 |------|----------|----------|----------|------|
-| 第1周 | Python + 环境 | 2026-01-08 | 2026-01-10 | ✅ 完成 |
-| 第2周 | LangChain + Prompt | 2026-01-13 | 2026-01-13 | ✅ 完成 |
+| 第1周 | Python + 环境 | 2026-01-08 | | 🟡 进行中 |
+| 第2周 | LangChain + Prompt | | | ⬜ |
 | 第3周 | RAG 系统 | | | ⬜ |
 | 第4周 | Agent 开发 | | | ⬜ |
 | 第5周 | Dify + FastAPI | | | ⬜ |

@@ -1,0 +1,20 @@
+LangChain 框架指南
+
+LangChain 是一个用于开发大语言模型（LLM）应用的开源框架。
+它提供了一系列工具和抽象，简化了 LLM 应用的开发过程。
+
+LangChain 的核心组件：
+1. Models：支持各种 LLM（OpenAI、Anthropic、本地模型等）
+2. Prompts：提示词模板和管理
+3. Chains：将多个组件串联成工作流
+4. Agents：让 LLM 自主决定使用哪些工具
+5. Memory：对话历史管理
+6. Retrievers：文档检索（RAG 的核心）
+
+安装 LangChain：
+pip install langchain langchain-openai langchain-community
+
+基本使用示例：
+from langchain_openai import ChatOpenAI
+llm = ChatOpenAI(model="gpt-3.5-turbo")
+response = llm.invoke("你好")

@@ -25,7 +25,6 @@ import os
 """
 
 # ============ 1. 使用 requests 调用 DeepSeek API ============
-DEEPSEEK_API_KEY="sk-e2c3420fca1a441f89b0a229f4e3b54a"
 
 def call_deepseek_api(prompt, api_key=None):
     """
@@ -36,7 +35,7 @@ def call_deepseek_api(prompt, api_key=None):
     import requests
     
     # 获取 API Key
-    api_key = api_key or os.getenv(DEEPSEEK_API_KEY)
+    api_key = api_key or os.getenv("DEEPSEEK_API_KEY")
     if not api_key:
         return "错误：请设置 DEEPSEEK_API_KEY 环境变量"
     
@@ -53,15 +52,19 @@ def call_deepseek_api(prompt, api_key=None):
     data = {
         "model": "deepseek-chat",
         "messages": [
-            {"role": "system", "content": "你是一个有帮助的AI助手"},
+            {"role": "system", "content": "扮演一个诗人"},
             {"role": "user", "content": prompt}
         ],
-        "temperature": 0.7,
+        "temperature": 1.5,
         "max_tokens": 1000
     }
     
     try:
-        response = requests.post(url, headers=headers, json=data, timeout=30)
+        # verify=False 禁用 SSL 证书验证（解决代理/VPN 证书问题）
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        
+        response = requests.post(url, headers=headers, json=data, timeout=30, verify=False)
         response.raise_for_status()  # 检查 HTTP 错误
         
         result = response.json()
@@ -121,7 +124,8 @@ def call_with_openai_sdk(prompt, api_key=None):
     # 创建客户端（指定 DeepSeek 的 base_url）
     client = OpenAI(
         api_key=api_key,
-        base_url="https://api.deepseek.com"
+        base_url="https://api.deepseek.com",
+        http_client=httpx.Client(verify=False)
     )
     
     # 调用 API
@@ -184,7 +188,7 @@ if __name__ == "__main__":
         
         # 测试调用
         print("\n正在调用 DeepSeek API...")
-        prompt = "用一句话介绍什么是大语言模型"
+        prompt = "描述春天"
         
         result = call_deepseek_api(prompt)
         print(f"\n问题: {prompt}")
@@ -214,6 +218,15 @@ if __name__ == "__main__":
 # 练习3 参考框架：
 def simple_chat():
     """简单的命令行聊天程序"""
+    import requests
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+    if not api_key:
+        print("错误：请设置 DEEPSEEK_API_KEY 环境变量")
+        return
+    
     messages = [
         {"role": "system", "content": "你是一个友好的AI助手"}
     ]
@@ -226,13 +239,36 @@ def simple_chat():
             print("再见！")
             break
         
-        # TODO: 
         # 1. 将用户输入添加到 messages
-        # 2. 调用 API
-        # 3. 将 AI 回复添加到 messages
-        # 4. 打印回复
+        messages.append({"role": "user", "content": user_input})
         
-        pass
+        # 2. 调用 API
+        url = "https://api.deepseek.com/chat/completions"
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        data = {
+            "model": "deepseek-chat",
+            "messages": messages,
+            "temperature": 0.7,
+            "max_tokens": 1000
+        }
+        
+        try:
+            response = requests.post(url, headers=headers, json=data, timeout=30, verify=False)
+            response.raise_for_status()
+            result = response.json()
+            ai_reply = result["choices"][0]["message"]["content"]
+            
+            # 3. 将 AI 回复添加到 messages
+            messages.append({"role": "assistant", "content": ai_reply})
+            
+            # 4. 打印回复
+            print(f"\nAI: {ai_reply}")
+            
+        except Exception as e:
+            print(f"请求错误: {e}")
 
 # 取消注释运行：
-# simple_chat()
+simple_chat()

@@ -46,33 +46,33 @@
 
 ## 第3周：RAG 系统搭建（重点！）
 
-- [ ] 3.1 向量数据库
-  - [ ] 理解 Embedding 原理（你已学过余弦相似度）
-  - [ ] 安装使用 Chroma / FAISS
-  - [ ] 文档切分策略
+- [x] 3.1 向量数据库 ✅
+  - [x] 理解 Embedding 原理（你已学过余弦相似度）
+  - [x] 安装使用 Chroma / FAISS
+  - [x] 文档切分策略
 
-- [ ] 3.2 RAG 完整流程
-  - [ ] 文档加载（PDF、Word、网页）
-  - [ ] 文本切分（chunk_size, overlap）
-  - [ ] 向量化存储
-  - [ ] 相似度检索
-  - [ ] 结合 LLM 生成回答
+- [x] 3.2 RAG 完整流程 ✅
+  - [x] 文档加载（PDF、Word、网页）
+  - [x] 文本切分（chunk_size, overlap）
+  - [x] 向量化存储
+  - [x] 相似度检索
+  - [x] 结合 LLM 生成回答
 
-- [ ] 3.3 RAG 项目实战
-  - [ ] 构建一个"个人知识库问答系统"
-  - [ ] 支持上传文档、提问、获取答案
-  - [ ] 这个项目可以写进简历！
+- [x] 3.3 RAG 项目实战 ✅
+  - [x] 构建一个"个人知识库问答系统"
+  - [x] 支持上传文档、提问、获取答案
+  - [x] 这个项目可以写进简历！
 
-- [ ] 3.4 个性化 RAG 与记忆系统（进阶）
-  - [ ] 理解 LLM 无状态性的局限
-  - [ ] 学习 LangChain Memory 类型（ConversationBufferMemory, ConversationSummaryMemory, VectorStoreRetrieverMemory）
-  - [ ] 实现用户专属记忆向量库
-    - [ ] 对话信息提取与存储
-    - [ ] 用户偏好自动学习
-    - [ ] 记忆检索与融合
-  - [ ] 了解 MemGPT / Zep 等记忆管理方案
-  - [ ] 练习：为 RAG 系统添加"会记住用户"的能力
-  - [ ] 思考：记忆冲突、遗忘机制、隐私问题
+- [x] 3.4 个性化 RAG 与记忆系统（进阶） ✅
+  - [x] 理解 LLM 无状态性的局限
+  - [x] 学习 LangChain Memory 类型（ConversationBufferMemory, ConversationSummaryMemory, VectorStoreRetrieverMemory）
+  - [x] 实现用户专属记忆向量库
+    - [x] 对话信息提取与存储
+    - [x] 用户偏好自动学习
+    - [x] 记忆检索与融合
+  - [x] 了解 MemGPT / Zep 等记忆管理方案
+  - [x] 练习：为 RAG 系统添加"会记住用户"的能力
+  - [x] 思考：记忆冲突、遗忘机制、隐私问题
 
 ---
 

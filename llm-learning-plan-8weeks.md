@@ -78,15 +78,15 @@
 
 ## 第4周：Agent 开发
 
-- [ ] 4.1 Agent 基础概念
-  - [ ] 理解 Agent = LLM + Tools + Memory
-  - [ ] ReAct 模式（推理+行动）
-  - [ ] 工具调用（Function Calling）
+- [x] 4.1 Agent 基础概念 ✅
+  - [x] 理解 Agent = LLM + Tools + Memory
+  - [x] ReAct 模式（推理+行动）
+  - [x] 工具调用（Function Calling）
 
-- [ ] 4.2 LangChain Agent
-  - [ ] 创建自定义 Tool
-  - [ ] 使用 AgentExecutor
-  - [ ] 实现一个能搜索网页的 Agent
+- [x] 4.2 LangChain Agent ✅
+  - [x] 创建自定义 Tool
+  - [x] 使用 AgentExecutor
+  - [x] 实现一个能搜索网页的 Agent
 
 - [ ] 4.3 多 Agent 协作（了解）
   - [ ] 了解 AutoGen / CrewAI 框架

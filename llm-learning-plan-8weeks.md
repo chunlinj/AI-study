@@ -46,37 +46,37 @@
 
 ## 第3周：RAG 系统搭建（重点！）
 
-- [ ] 3.1 向量数据库
-  - [ ] 理解 Embedding 原理（你已学过余弦相似度）
-  - [ ] 安装使用 Chroma / FAISS
-  - [ ] 文档切分策略
+- [x] 3.1 向量数据库 ✅
+  - [x] 理解 Embedding 原理（你已学过余弦相似度）
+  - [x] 安装使用 Chroma / FAISS
+  - [x] 文档切分策略
 
-- [ ] 3.2 RAG 完整流程
-  - [ ] 文档加载（PDF、Word、网页）
-  - [ ] 文本切分（chunk_size, overlap）
-  - [ ] 向量化存储
-  - [ ] 相似度检索
-  - [ ] 结合 LLM 生成回答
+- [x] 3.2 RAG 完整流程 ✅
+  - [x] 文档加载（PDF、Word、网页）
+  - [x] 文本切分（chunk_size, overlap）
+  - [x] 向量化存储
+  - [x] 相似度检索
+  - [x] 结合 LLM 生成回答
 
-- [ ] 3.3 RAG 项目实战
-  - [ ] 构建一个"个人知识库问答系统"
-  - [ ] 支持上传文档、提问、获取答案
-  - [ ] 这个项目可以写进简历！
+- [x] 3.3 RAG 项目实战 ✅
+  - [x] 构建一个"个人知识库问答系统"
+  - [x] 支持上传文档、提问、获取答案
+  - [x] 这个项目可以写进简历！
 
-- [ ] 3.4 个性化 RAG 与记忆系统（进阶）
-  - [ ] 理解 LLM 无状态性的局限
-  - [ ] 学习 LangChain Memory 类型（ConversationBufferMemory, ConversationSummaryMemory, VectorStoreRetrieverMemory）
-  - [ ] 实现用户专属记忆向量库
-    - [ ] 对话信息提取与存储
-    - [ ] 用户偏好自动学习
-    - [ ] 记忆检索与融合
-  - [ ] 了解 MemGPT / Zep 等记忆管理方案
-  - [ ] 练习：为 RAG 系统添加"会记住用户"的能力
-  - [ ] 思考：记忆冲突、遗忘机制、隐私问题
+- [x] 3.4 个性化 RAG 与记忆系统（进阶） ✅
+  - [x] 理解 LLM 无状态性的局限
+  - [x] 学习 LangChain Memory 类型（ConversationBufferMemory, ConversationSummaryMemory, VectorStoreRetrieverMemory）
+  - [x] 实现用户专属记忆向量库
+    - [x] 对话信息提取与存储
+    - [x] 用户偏好自动学习
+    - [x] 记忆检索与融合
+  - [x] 了解 MemGPT / Zep 等记忆管理方案
+  - [x] 练习：为 RAG 系统添加"会记住用户"的能力
+  - [x] 思考：记忆冲突、遗忘机制、隐私问题
 
 ---
 
-## 第4周：Agent 开发
+## 第4周：Agent 开发 + MCP 工具链
 
 - [x] 4.1 Agent 基础概念 ✅
   - [x] 理解 Agent = LLM + Tools + Memory
@@ -88,9 +88,31 @@
   - [x] 使用 AgentExecutor
   - [x] 实现一个能搜索网页的 Agent
 
-- [ ] 4.3 多 Agent 协作（了解）
+- [ ] 4.3 MCP (Model Context Protocol) 协议（重点！）
+  - [ ] 理解 MCP 协议的意义和架构
+    - [ ] 为什么需要标准化的工具协议
+    - [ ] MCP Server vs MCP Client
+    - [ ] 与传统 API 调用的区别
+  - [ ] 安装和使用现有 MCP Server
+    - [ ] 文件系统 MCP Server
+    - [ ] GitHub MCP Server
+    - [ ] 数据库 MCP Server
+  - [ ] 开发自己的 MCP Server
+    - [ ] 使用 Python 实现简单的 MCP Server
+    - [ ] 定义工具（Tools）和资源（Resources）
+    - [ ] 处理工具调用请求
+  - [ ] 实战：为中国服务开发 MCP Server
+    - [ ] 网易云音乐 API 封装（音乐搜索、播放控制）
+    - [ ] 和风天气 API 封装（天气查询）
+    - [ ] QQ 邮箱 IMAP 封装（邮件检查）
+  - [ ] 集成 MCP 到你的 Agent
+    - [ ] 让 Agent 能够调用 MCP 工具
+    - [ ] 实现工具链组合（多个工具协作）
+
+- [ ] 4.4 多 Agent 协作（了解）
   - [ ] 了解 AutoGen / CrewAI 框架
   - [ ] 理解多 Agent 协作模式
+  - [ ] 了解 Moltbot 等个人助手项目的架构
 
 ---
 
@@ -123,10 +145,16 @@
   - [ ] 添加来源引用
   - [ ] 部署到云服务器（可选）
 
-- [ ] 6.2 第二个项目：智能客服/助手
-  - [ ] 结合 Agent + RAG
-  - [ ] 支持多轮对话
-  - [ ] 可以调用外部工具
+- [ ] 6.2 第二个项目：中国版个人助手 MVP
+  - [ ] 结合 Agent + RAG + MCP
+  - [ ] 支持多轮对话和记忆
+  - [ ] 集成中国本地化服务
+    - [ ] 网易云音乐控制
+    - [ ] QQ 邮箱检查
+    - [ ] 天气查询（和风天气）
+    - [ ] 文件系统操作
+  - [ ] 可通过命令行或简单 Web 界面交互
+  - [ ] 这个项目展示你对 MCP 生态的理解！
 
 - [ ] 6.3 整理项目文档
   - [ ] 写清楚项目背景、技术栈、你的贡献
@@ -143,6 +171,9 @@
   - [ ] Prompt Engineering 技巧
   - [ ] 向量数据库选型对比
   - [ ] LangChain vs LlamaIndex 区别
+  - [ ] MCP 协议的意义和应用场景
+  - [ ] AI Agent 工具生态的发展趋势
+  - [ ] 本地化 AI 服务的挑战和机会
 
 - [ ] 7.2 Java + AI 结合点
   - [ ] Spring Boot 调用 LLM API
@@ -184,6 +215,8 @@
 **文档：**
 - LangChain 官方文档：https://python.langchain.com/
 - Dify 官方文档：https://docs.dify.ai/
+- MCP 协议文档：https://modelcontextprotocol.io/
+- Moltbot 项目：https://github.com/moltbot/moltbot
 
 **实践平台：**
 - DeepSeek API（国产，便宜）
@@ -217,6 +250,8 @@
 **新增的重点：**
 - RAG 系统（面试必问）
 - Agent 开发（热门方向）
+- MCP 协议和工具生态（前沿趋势）
+- 本地化 AI 服务开发（市场机会）
 - Dify 等低代码平台（企业常用）
 - FastAPI（Python Web 框架）
 - 项目实战（简历亮点）

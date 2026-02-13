@@ -78,41 +78,41 @@
 
 ## 第4周：Agent 开发 + MCP 工具链
 
-- [ ] 4.1 Agent 基础概念
-  - [ ] 理解 Agent = LLM + Tools + Memory
-  - [ ] ReAct 模式（推理+行动）
-  - [ ] 工具调用（Function Calling）
+- [x] 4.1 Agent 基础概念 ✅
+  - [x] 理解 Agent = LLM + Tools + Memory
+  - [x] ReAct 模式（推理+行动）
+  - [x] 工具调用（Function Calling）
 
-- [ ] 4.2 LangChain Agent
-  - [ ] 创建自定义 Tool
-  - [ ] 使用 AgentExecutor
-  - [ ] 实现一个能搜索网页的 Agent
+- [x] 4.2 LangChain Agent ✅
+  - [x] 创建自定义 Tool
+  - [x] 使用 AgentExecutor
+  - [x] 实现一个能搜索网页的 Agent
 
-- [ ] 4.3 MCP (Model Context Protocol) 协议（重点！）
-  - [ ] 理解 MCP 协议的意义和架构
-    - [ ] 为什么需要标准化的工具协议
-    - [ ] MCP Server vs MCP Client
-    - [ ] 与传统 API 调用的区别
-  - [ ] 安装和使用现有 MCP Server
-    - [ ] 文件系统 MCP Server
-    - [ ] GitHub MCP Server
-    - [ ] 数据库 MCP Server
-  - [ ] 开发自己的 MCP Server
-    - [ ] 使用 Python 实现简单的 MCP Server
-    - [ ] 定义工具（Tools）和资源（Resources）
-    - [ ] 处理工具调用请求
-  - [ ] 实战：为中国服务开发 MCP Server
-    - [ ] 网易云音乐 API 封装（音乐搜索、播放控制）
-    - [ ] 和风天气 API 封装（天气查询）
-    - [ ] QQ 邮箱 IMAP 封装（邮件检查）
-  - [ ] 集成 MCP 到你的 Agent
-    - [ ] 让 Agent 能够调用 MCP 工具
-    - [ ] 实现工具链组合（多个工具协作）
+- [x] 4.3 MCP (Model Context Protocol) 协议（重点！）✅
+  - [x] 理解 MCP 协议的意义和架构
+    - [x] 为什么需要标准化的工具协议
+    - [x] MCP Server vs MCP Client
+    - [x] 与传统 API 调用的区别
+  - [x] 安装和使用现有 MCP Server
+    - [x] 文件系统 MCP Server
+    - [x] GitHub MCP Server
+    - [x] 数据库 MCP Server
+  - [x] 开发自己的 MCP Server
+    - [x] 使用 Python 实现简单的 MCP Server
+    - [x] 定义工具（Tools）和资源（Resources）
+    - [x] 处理工具调用请求
+  - [x] 实战：为中国服务开发 MCP Server
+    - [x] 网易云音乐 API 封装（音乐搜索、播放控制）
+    - [x] 和风天气 API 封装（天气查询）
+    - [x] QQ 邮箱 IMAP 封装（邮件检查）
+  - [x] 集成 MCP 到你的 Agent
+    - [x] 让 Agent 能够调用 MCP 工具
+    - [x] 实现工具链组合（多个工具协作）
 
-- [ ] 4.4 多 Agent 协作（了解）
-  - [ ] 了解 AutoGen / CrewAI 框架
-  - [ ] 理解多 Agent 协作模式
-  - [ ] 了解 Moltbot 等个人助手项目的架构
+- [x] 4.4 多 Agent 协作（了解）✅
+  - [x] 了解 AutoGen / CrewAI 框架
+  - [x] 理解多 Agent 协作模式
+  - [x] 了解 Moltbot 等个人助手项目的架构
 
 ---
 

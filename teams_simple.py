@@ -13,7 +13,7 @@ from datetime import datetime
 MESSAGE = "哈哈"
 
 # 发送间隔（秒）
-INTERVAL = 60  # 1分钟
+INTERVAL = 120  # 2分钟
 
 # 安全设置
 pyautogui.FAILSAFE = True
